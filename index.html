@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+    <script type="module" src='./config.js'></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="text-center">
+            <h2>Filmes Populares</h2>
+        </div>
+
+        <div class="flex-container">
+            <input type="text" class="busca" name="busca_filme" id="busca_filme"
+                placeholder="Digite algum filme para pesquisar...">
+            <img src="icons/search-icon.svg" alt="Lupa" class="searchIcon">
+        </div>
+
+        <div class="show-favorite-movies">
+            <input type="checkbox" class="checkbox" name="filmes_favoritos" id="filmes_favoritos">
+            <label for="filmes_favoritos"> Mostrar meus filmes favoritos apenas</label>
+        </div>
+
+        <div class="movie-container">
+            <div class="movie-card">
+                <div class="movie-info">
+                    <div class="movie-image">
+                        <img src="https://img.elo7.com.br/product/original/3FBA809/big-poster-filme-batman-2022-90x60-cm-lo002-poster-batman.jpg"
+                            alt="Batman (2022)" />
+                    </div>
+                    <div class="movie-title">
+                        <h4>Batman (2022)</h4>
+                        <div class="rating-favorites">
+                            <div class="rating">
+                                <img src="icons/star.svg" alt="Star Icon" />
+                                <span>9.2</span>
+                            </div>
+                            <div class="favorite">
+                                <img src="icons/heart.svg" alt="Heart Icon" />
+                                <span>Favoritar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-description">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-info">
+                    <div class="movie-image">
+                        <img src="https://img.elo7.com.br/product/zoom/259A7AA/big-poster-filme-vingadores-ultimato-lo001-tamanho-90x60-cm-poster-marvel.jpg"
+                            alt="Vingadores: Ultimato (2019)" />
+                    </div>
+                    <div class="movie-title">
+                        <h4>Vingadores: Ultimato (2019)</h4>
+                        <div class="rating-favorites">
+                            <div class="rating">
+                                <img src="icons/star.svg" alt="Star Icon" />
+                                <span>9.2</span>
+                            </div>
+                            <div class="favorite">
+                                <img src="icons/heart.svg" alt="Heart Icon" />
+                                <span>Favoritar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-description">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./filmes.js"></script>
+</body>
+
+</html>
